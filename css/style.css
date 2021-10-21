@@ -247,16 +247,14 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 255px;
 }
 
-/* .heder-link__flex {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-} */
-
 .heder-link__flex-2 {
     display: flex;
     align-items: center;
     justify-content: end;
+}
+
+.header-logo img {
+    width: 100%;
 }
 
 .header-text {
@@ -289,14 +287,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sec-1__box {
-    max-width: 270px;
-    min-height: 270px;
+    width: 270px;
+    height: 270px;
     border: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
-    flex-basis: 55%;
+    /* flex-basis: 55%; */
 }
 
 .s-1__img img {
@@ -339,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sec-2__box {
-    max-width: 300px;
+    /* max-width: 300px; */
     min-height: 311px;
     display: flex;
     flex-direction: column;
@@ -375,6 +373,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 23px;
     text-align: center;
     color: #1A1A1A;
+    max-width: 300px;
 }
 
 /*__________section-3____________*/
@@ -391,11 +390,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 96px;
     margin-bottom: 87px;
 }
-
-/* .sec-3__main {
-    display: flex;
-    justify-content: center;
-} */
 
 .form-name input {
     background: #FFFFFF;
@@ -473,6 +467,8 @@ textarea {
     min-height: 260px;
     display: flex;
     align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /* .foot__main {
@@ -486,19 +482,19 @@ textarea {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
-    text-align: right;
+    text-align: center;
     letter-spacing: 0.05em;
     color: #FFFFFF;
 }
 
 .map-foot {
-    position: relative;
+    /* position: relative; */
+    
 }
 
 .map-foot::before {
     content: url(../img/icon/svg/foot_map.svg);
-    position: absolute;
-    left: -30px;
+    margin-right: 10px;
 }
 
 .tel-foot {
