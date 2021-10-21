@@ -7,38 +7,48 @@
     <meta name="description" content="Обучение по повышению квалификации"/>
     <title>Обучение по повыщению квалификации</title>
     <!-- <link rel="stylesheet" href="css/style.css"/> -->
-    <link rel="stylesheet" href="css/bootstrap_4.css"/>
+    <link rel="stylesheet" href="css/bootstrap_5.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <!-- Дата выполнения задания 08.10.2021 -->
 </head>
 <body>
     <header class="wrapper header">
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-8">
+        <nav class="nav-menu-1">
+            <ul class="menu-1">
+                <li class="menu-link active-1"><a class="active-1" href="#part1">О компании</a></li>
+                <li class="menu-link"><a class="active-2" href="#part2">Деятельность</a></li>
+                <li class="menu-link"><a class="active-3" href="#part3">Преимущества</a></li>
+                <li ><a class="active-4" href="#part4">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="container-xl" id="part1">
+            <div class="row pt-4">
+                <div class="col-2">
                     <div class="heder-link__flex-1">
                         <a class="link-1" href="https://vk.com" target="_blank" rel="nofollow"></a>
                         <a class="link-2" href="https://www.facebook.com" target="_blank" rel="nofollow"></a>
                         <a class="link-3" href="https://www.instagram.com" target="_blank" rel="nofollow"></a>
                     </div>
                 </div>
-                <div class="col-2">
-                    <a class="tel" href="tel:+74957809444">+7 (495) 780-94-44</a>
-                </div>
-                <div class="col-2">
-                    <a class="mail" href="mailto:mail@tochkarosta.me">mail@tochkarosta.me</a>
+                <div class="col-10">
+                    <div class="heder-link__flex-2">
+                        <a class="tel me-5" href="tel:+74957809444">+7 (495) 780-94-44</a>
+                        <a class="mail" href="mailto:mail@tochkarosta.me">mail@tochkarosta.me</a>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-10"><a href="/"><img src="img/logo/logo_1.svg" alt="logo"></a></div>
-                <div class="col-10">ООО "Точка Роста" занимается научными исследованиями и разработками в области общественных и гуманитарных наук. Цели деятельности - удовлетворение потребностей населения в разнообразных высококачественных товарах и услугах, развитие предпринимательской деятельности, разработка информационных систем</div>
+            <div class="header-centre">
+                <div class="row justify-content-center">
+                    <div class="col-10 mb-5"><a class="header-logo" href="/"><img src="img/logo/logo_1.svg" alt="logo"></a></div>
+                    <div class="col-10"><div class="header-text">ООО "Точка Роста" занимается научными исследованиями и разработками в области общественных и гуманитарных наук. Цели деятельности - удовлетворение потребностей населения в разнообразных высококачественных товарах и услугах, развитие предпринимательской деятельности, разработка информационных систем</div></div>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="wrapper sec-1">
+        <section class="wrapper sec-1" id="part2">
             <div class="container-xl">
-                <div class="tile-s1">виды Деятельности</div>
+                <div class="tile-s1">Виды Деятельности</div>
                 <div class="row">
                     <div class="col-3">
                         <div class="sec-1__box">
@@ -91,7 +101,7 @@
                 </div>
             </div>
         </section>
-        <section class="wrapper  sec-2">
+        <section class="wrapper sec-2" id="part3">
             <div class="container-xl">
                 <div class="tile-s2">Наши преимущества</div>
                 <div class="row">
@@ -119,17 +129,15 @@
                 </div>
             </div>
         </section>
-        <section class="wrapper  sec-3">
+        <section class="wrapper sec-3" id="part4">
             <div class="container-xl">
                 <div class="tile-s3">Контакты</div>
                 <div class="sec-3__main">
-                    <form class="sec-3__form">
-                        <div class="sec-3__flex">
-                            <div class="form-name"><input type="text" name="name" placeholder="Ваше имя"></div>
-                            <div class="form-mail"><input type="email" name="e-mail" placeholder="Ваше e-mail"></div>
-                        </div>
-                        <div><textarea name="message" placeholder="Ваше сообщение"></textarea></div>
-                        <div class="btm"><button>Отправить</button></div>
+                    <form class="row justify-content-center">
+                        <div class="col-4 form-name"><input type="text" name="name" placeholder="Ваше имя"></div>
+                        <div class="col-4 form-mail"><input type="email" name="e-mail" placeholder="Ваше e-mail"></div>
+                        <div class="col-8" ><textarea name="message" placeholder="Ваше сообщение"></textarea></div>
+                        <div class="col-12 btm"><button>Отправить</button></div>
                     </form>
                 </div>
             </div>
@@ -137,22 +145,24 @@
     </main>
     <footer class="footer">
         <div class="container-xl">
-            <div class="sec-3__main">
+            <div class="foot__main">
                 <div class="row">
-                    <div class="col"><a href="/"><img src="img/logo/logo_2.svg" alt="logo"></a></div>
-                    <div class="contacts">
-                        <span>105264, г. Москва, ул. Верхняя Первомайская, д. 36, стр. 2</span>
-                        <a class="tel-foot" href="tel:+74957809444">+7 (495) 780-94-44</a>
-                        <a class="mail-foot" href="mailto:mail@tochkarosta.me">mail@tochkarosta.me</a>
-                        <span>www.tochkarosta.me</span>
-                    </div>  
+                    <div class="col-3"><a href="/"><img src="img/logo/logo_2.svg" alt="logo"></a></div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-12 mb-4 contacts"><a class="map-foot" href="https://goo.gl/maps/nQCfJfbrQYDAmGhH8" target="_blank" rel="nofollow">105264, г. Москва, ул. Верхняя Первомайская, д. 36, стр. 2</a></div>
+                            <div class="col-4 contacts"><a class="tel-foot" href="tel:+74957809444">+7 (495) 780-94-44</a></div>
+                            <div class="col-4 contacts"><a class="mail-foot" href="mailto:mail@tochkarosta.me">mail@tochkarosta.me</a></div>
+                            <div class="col-4 contacts"><a class="site-foot" href="https://xn--80aa2apclicg8b.xn--80adxhks" target="_blank" rel="nofollow">www.tochkarosta.me</a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
     <footer class="footer-2">
         <div class="container-xl">
-            <div class="foot-2__main">Все права защищены ©2019</div>
+            <div class="foot-2__main"><a href="#">Все права защищены ©2019</a></div>
         </div>
     </footer>
 </body>
