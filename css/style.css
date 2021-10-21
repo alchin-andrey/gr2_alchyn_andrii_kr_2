@@ -265,6 +265,20 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 38px;
     text-align: justify;
     color: #1A1A1A;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .header-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-text {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 /*__________section-1___________*/
@@ -469,12 +483,21 @@ textarea {
     align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    position: relative;
 }
 
-/* .foot__main {
+.footer > a::after {
+    content: url(../img/icon/svg/scrolling-foot.svg);
+    width: 44px;
+    height: 44px;
+    background-color: #FF5641;
+    position: absolute;
     display: flex;
     align-items: center;
-} */
+    justify-content: center;
+    top: -86px;
+    right: 15px;
+}
 
 .contacts, .contacts a, .contacts span {
     font-family: 'Roboto', sans-serif;
@@ -536,6 +559,20 @@ textarea {
 .footer-2 {
     background-color: rgba(0, 0, 0, 0.76);
     margin-top: -30px;
+}
+
+.foot-2__main a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    color: #DCDCDC;
+    padding: 8px 0 8px 0;
 }
 
 .foot-2__main a {
