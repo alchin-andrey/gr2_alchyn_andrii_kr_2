@@ -12,7 +12,7 @@
     <!-- Дата выполнения задания 08.10.2021 -->
 </head>
 <body>
-    <header class="wrapper header">
+    <header class="header">
         <nav class="nav-menu-1">
             <ul class="menu-1">
                 <li class="menu-link active-1"><a class="active-1" href="#part1">О компании</a></li>
@@ -22,31 +22,33 @@
             </ul>
         </nav>
         <div class="container" id="part1">
-            <div class="row pt-4">
-                <div class="col-12 col-sm-4 col-lg-6 col-xl-8 mb-3 d-flex justify-content-center">
-                    <div class="heder-link__flex-1">
-                        <a class="link-1" href="https://vk.com" target="_blank" rel="nofollow"></a>
-                        <a class="link-2" href="https://www.facebook.com" target="_blank" rel="nofollow"></a>
-                        <a class="link-3" href="https://www.instagram.com" target="_blank" rel="nofollow"></a>
+            <div class="heder-link">
+                <div class="row">
+                    <div class="col-12 col-sm-4 col-lg-6 col-xl-8 mb-3 d-flex justify-content-center justify-content-md-start">
+                        <div class="heder-link__flex-1">
+                            <a class="link-1" href="https://vk.com" target="_blank" rel="nofollow"></a>
+                            <a class="link-2" href="https://www.facebook.com" target="_blank" rel="nofollow"></a>
+                            <a class="link-3" href="https://www.instagram.com" target="_blank" rel="nofollow"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-lg-3 col-xl-2 mb-2 d-flex justify-content-center justify-content-md-end">
+                        <a class="tel" href="tel:+74957809444">+7 (495) 780-94-44</a>
+                    </div>
+                    <div class="col-12 col-sm-4 col-lg-3 col-xl-2 d-flex justify-content-center justify-content-md-end">
+                        <a class="mail" href="mailto:mail@tochkarosta.me">mail@tochkarosta.me</a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 col-lg-3 col-xl-2 mb-2 d-flex justify-content-center justify-content-md-end">
-                    <a class="tel" href="tel:+74957809444">+7 (495) 780-94-44</a>
-                </div>
-                <div class="col-12 col-sm-4 col-lg-3 col-xl-2 d-flex justify-content-center justify-content-md-end">
-                    <a class="mail" href="mailto:mail@tochkarosta.me">mail@tochkarosta.me</a>
-                </div>
-            </div>
-            <div class="header-centre">
-                <div class="row justify-content-center">
-                    <div class="col-10 mb-5"><a class="header-logo" href="/"><img src="img/logo/logo_1.svg" alt="logo"></a></div>
-                    <div class="col-12 col-lg-10"><div class="header-text">ООО "Точка Роста" занимается научными исследованиями и разработками в области общественных и гуманитарных наук. Цели деятельности - удовлетворение потребностей населения в разнообразных высококачественных товарах и услугах, развитие предпринимательской деятельности, разработка информационных систем</div></div>
+                <div class="header-centre">
+                    <div class="row justify-content-center">
+                        <div class="col-10 mb-5"><a class="header-logo" href="/"><img src="img/logo/logo_1.svg" alt="logo"></a></div>
+                        <div class="col-12 col-lg-10"><div class="header-text">ООО "Точка Роста" занимается научными исследованиями и разработками в области общественных и гуманитарных наук. Цели деятельности - удовлетворение потребностей населения в разнообразных высококачественных товарах и услугах, развитие предпринимательской деятельности, разработка информационных систем</div></div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="wrapper sec-1" id="part2">
+        <section class="sec-1" id="part2">
             <div class="container">
                 <div class="tile-s1">Виды Деятельности</div>
                 <div class="row">
@@ -93,15 +95,15 @@
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex justify-content-center">
-                        <dim class="sec-1__box">
+                        <div class="sec-1__box">
                             <div class="s-1__img"><img src="img/icon/svg/s1_ekonom.svg" alt="ekonom"></div>
                             <div class="s-1__text">Внешнеэкономическая</div>
-                        </dim>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="wrapper sec-2" id="part3">
+        <section class="sec-2" id="part3">
             <div class="container">
                 <div class="tile-s2">Наши преимущества</div>
                 <div class="row">
@@ -129,7 +131,7 @@
                 </div>
             </div>
         </section>
-        <section class="wrapper sec-3" id="part4">
+        <section class="sec-3" id="part4">
             <div class="container">
                 <div class="tile-s3">Контакты</div>
                 <div class="sec-3__main">
@@ -145,7 +147,7 @@
     </main>
     <footer class="footer">
         <a  href="#part1"></a>
-        <div class="container">
+        <div class="container-md">
             <div class="foot__main">
                 <div class="row">
                     <div class="col-12 col-md-2 d-flex justify-content-center align-items-center"><a href="/"><img src="img/logo/logo_2.svg" alt="logo"></a></div>
@@ -162,7 +164,7 @@
         </div>
     </footer>
     <footer class="footer-2">
-        <div class="container-xl">
+        <div class="container">
             <div class="foot-2__main"><a href="#">Все права защищены ©2019</a></div>
         </div>
     </footer>

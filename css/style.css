@@ -122,16 +122,50 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {
     max-width: 1920px;
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
 }
 
 /*________menu_______*/
 
 .nav-menu-1 {
     position: fixed;
-    top: 300px;
+    top: 250px;
     left: 0px;
     z-index: 10;
+
+}
+
+@media (max-width: 1600px) {
+    .nav-menu-1 {
+        width: 100%;
+        left: auto;
+        top: 0;
+        background:rgba(255, 233, 220, 0.5);
+        padding: 15px 0 15px 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    .menu-1 {
+        display: flex;
+        justify-content: space-evenly;
+        /* flex-wrap: wrap; */
+        gap: 0px 0;
+    }
+}
+
+@media (max-width: 625px) {
+    .menu-1 {
+        flex-wrap: wrap;
+        gap: 10px 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .menu-1 {
+        flex-wrap: wrap;
+        gap: 10px 0px;
+    }
 }
 
 .menu-link {
@@ -148,8 +182,27 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0px;
 }
 
+@media (max-width: 1600px) {
+    .menu-link::before {
+        display: none;
+    }
+}
+
 .menu-1 li {
     padding: 20px 0 20px 0;
+}
+
+@media (max-width: 1600px) {
+    .menu-1 li  {
+        padding: 0 15px 0 15px;
+    }
+}
+
+@media (max-width: 1600px) {
+    ul {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
 }
 
 .menu-1>li>a {
@@ -178,6 +231,12 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
+@media (max-width: 768px) {
+    .header {
+        min-height: auto;
+    }
+}
+
 .header::before {
     content: url(../img/icon/svg/scrolling-head.svg);
     position: absolute;
@@ -192,6 +251,22 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
     line-height: 18px;
     color: #1A1A1A;
+}
+
+.heder-link {
+    padding-top: 15px;
+}
+
+@media (max-width: 1600px) {
+    .heder-link {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 625px) {
+    .heder-link {
+        padding-top: 90px;
+    }
 }
 
 .heder-link__flex-1 {
@@ -247,14 +322,23 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 255px;
 }
 
+@media (max-width: 768px) {
+    .header-centre {
+        padding-top: 20px;
+    }
+}
+
 .heder-link__flex-2 {
     display: flex;
     align-items: center;
     justify-content: end;
 }
 
-.header-logo img {
-    width: 100%;
+@media (max-width: 768px) {
+    .header-logo img {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 .header-text {
@@ -300,6 +384,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 99px;
 }
 
+@media (max-width: 768px) {
+    .tile-s1 {
+        padding-top: 90px;
+        margin-bottom: 30px;
+    }
+}
+
 .sec-1__box {
     width: 270px;
     height: 270px;
@@ -308,7 +399,16 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
-    /* flex-basis: 55%; */
+}
+
+@media (max-width: 576px) {
+    .sec-1__box {
+        width: 250px;
+        height: 150px;
+        margin-bottom: 30px;
+        justify-content: center;
+
+    }
 }
 
 .s-1__img img {
@@ -316,6 +416,12 @@ h1, h2, h3, h4, h5, h6 {
     height: 66px;
     margin-bottom: 20px;
     margin-top: 80px;
+}
+
+@media (max-width: 576px) {
+    .s-1__img img {
+        margin-top: 0px;
+    }
 }
 
 .s-1__text {
@@ -333,8 +439,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .sec-2 {
     background: url(../img/background/ofice_2.png) center/cover no-repeat fixed;
-    ;
     min-height: 899px;
+}
+
+@media (max-width: 768px) {
+    .sec-2 {
+        min-height: auto;
+    }
 }
 
 .tile-s2 {
@@ -348,6 +459,13 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding-top: 213px;
     margin-bottom: 178px;
+}
+
+@media (max-width: 768px) {
+    .tile-s2 {
+        padding-top: 90px;
+        margin-bottom: 30px;
+    }
 }
 
 .sec-2__box {
@@ -403,6 +521,13 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding-top: 96px;
     margin-bottom: 87px;
+}
+
+@media (max-width: 768px) {
+    .tile-s3 {
+        padding-top: 90px;
+        margin-bottom: 30px;
+    }
 }
 
 .form-name input {
@@ -470,7 +595,7 @@ textarea {
     margin: 45px 0 44px 0;
 }
 
-.btm button:active {
+.btm button:hover {
     background: #6d3a0a;
 }
 
@@ -499,6 +624,10 @@ textarea {
     right: 15px;
 }
 
+.footer > a:hover::after {
+    border-radius: 50px;
+}
+
 .contacts, .contacts a, .contacts span {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -510,10 +639,6 @@ textarea {
     color: #FFFFFF;
 }
 
-.map-foot {
-    /* position: relative; */
-    
-}
 
 .map-foot::before {
     content: url(../img/icon/svg/foot_map.svg);
@@ -559,6 +684,8 @@ textarea {
 .footer-2 {
     background-color: rgba(0, 0, 0, 0.76);
     margin-top: -30px;
+    position: relative;
+    z-index: 2;
 }
 
 .foot-2__main a {
