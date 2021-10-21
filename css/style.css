@@ -230,8 +230,19 @@ h1, h2, h3, h4, h5, h6 {
 .header::before {
     content: url(../img/icon/svg/scrolling-head.svg);
     position: absolute;
-    bottom: 30px;
+    bottom: 0px;
     left: 50%;
+    animation-name: scrolling-head;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes scrolling-head {
+    100% {
+        bottom: 40px;
+    }
 }
 
 .header a {
@@ -391,6 +402,20 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
 }
 
+.sec-1__box:hover{
+    animation-name: box;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes box {
+100% {
+padding-top: 20px;
+}
+}
+
 @media (max-width: 576px) {
     .sec-1__box {
         width: 250px;
@@ -459,7 +484,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sec-2__box {
-    /* max-width: 300px; */
     min-height: 311px;
     display: flex;
     flex-direction: column;
@@ -609,6 +633,21 @@ textarea {
     justify-content: center;
     top: -86px;
     right: 15px;
+    animation-name: scrolling-foot;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.footer > a:hover::after{
+    animation-play-state: paused;
+    }
+
+@keyframes scrolling-foot {
+100% {
+    top: 40px;
+}
 }
 
 .footer > a:hover::after {
